@@ -1,0 +1,25 @@
+// основные цвета
+$main-color_white: #FFFF;
+$main-color_blue: #394573;
+$main-color_light-aqua: #BEE7E8;
+$button-color_aqua: #A0D2DB;
+$button-color_violet: #726DA8;
+// шрифты
+@font-face {
+    font-family: "Montserrat-Medium";
+    src: url('/assets/fonts/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url('/assets/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    src: url('/assets/fonts/Montserrat-SemiBold.ttf');
+}
+
+.wrapper {
+    max-width: 1216px;
+}
