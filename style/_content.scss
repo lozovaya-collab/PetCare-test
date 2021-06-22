@@ -1,0 +1,9 @@
+.content {
+    height: 39.375em;
+    padding: 4.375em 0 4.5em 0;
+    & .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
