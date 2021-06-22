@@ -1,9 +1,11 @@
 // основные цвета
 $main-color_white: #FFFF;
+$main-color_black: #333333;
 $main-color_blue: #394573;
 $main-color_light-aqua: #BEE7E8;
 $button-color_aqua: #A0D2DB;
 $button-color_violet: #726DA8;
+$shadow: rgba(0, 0, 0, 0.3);
 // шрифты
 @font-face {
     font-family: "Montserrat-Medium";
@@ -21,5 +23,11 @@ $button-color_violet: #726DA8;
 }
 
 .wrapper {
-    max-width: 1216px;
+    position: relative;
+    width: 76em;
+    margin: 0 auto;
+}
+
+.disabled_switch {
+    fill: $button-color_aqua;
 }

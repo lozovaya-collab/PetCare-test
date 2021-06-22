@@ -17,26 +17,77 @@
 
 <body>
     <header class="header">
-        <section class="header_content">
-            <div class="logo header_content__logo"></div>
-            <nav class="header_content__menu"></nav>
-            <div class="header_content__social-nets"></div>
-        </section>
+        <div class="wrapper">
+            <section class="header_content">
+                <div class="logo header_content__logo">
+                    <a href="index.html">
+                        <svg class="header_content__logo_icon">
+                            <use xlink:href="/assets/icons/sprite.svg#logo-icon"></use>
+                        </svg>
+                    </a>
+                    <span class="header_content__logo_name">PetCare</span>
+                </div>
+                <nav class="header_content__menu">
+                    <ul class="header_content__menu">
+                        <li class="header_content__menu_item">Новости</li>
+                        <li class="header_content__menu_item">О нас</li>
+                        <li class="header_content__menu_item">Блог</li>
+                        <li class="header_content__menu_item">Услуги</li>
+                        <li class="header_content__menu_item">Контакты</li>
+                    </ul>
+                </nav>
+                <div class="header_content__social-nets">
+                    <a href="https://www.instagram.com/?hl=ru">
+                        <svg class="header_content__social-nets_instagram">
+                            <use xlink:href="/assets/icons/sprite.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="https://tlgrm.ru/">
+                        <svg class="header_content__social-nets_telegram">
+                            <use xlink:href="/assets/icons/sprite.svg#telegram"></use>
+                        </svg>
+                    </a>
+                    <a href="https://vk.com/">
+                        <svg class="header_content__social-nets_vk">
+                            <use xlink:href="/assets/icons/sprite.svg#vk"></use>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+        </div>
     </header>
     <main>
         <section class="slider">
             <div class="slider_item">
-                <div class="slider_item_switches"></div>
-                <div class="slider_item_content">
-                    <div class="slider_item_content__information">
-                        <h2></h2>
-                        <p></p>
-                        <button></button>
+                <div class="slider_item_circle"></div>
+                <div class="wrapper">
+                    <div class="slider_item_switches">
+                        <button class="slider_item_switches__left-arrow">
+                            <svg class="disabled_switch slider_item_switches__left-arrow_icon">
+                                <use xlink:href="/assets/icons/sprite.svg#button-arrow"></use>
+                            </svg>
+                        </button>
+                        <button class="slider_item_switches__right-arrow">
+                            <svg class="slider_item_switches__right-arrow_icon">
+                                <use xlink:href="/assets/icons/sprite.svg#button-arrow"></use>
+                            </svg>
+                        </button>
                     </div>
-                    <div class="slider_item_content__image"></div>
+                    <div class="slider_item_content">
+                        <div class="slider_item_content__information">
+                            <h2>
+                                Мы заботимся о ваших питомцах
+                            </h2>
+                            <p>
+                                Записывайтесь в ветклиники и консультируйтесь с ветеринарным врачом онлайн
+                            </p>
+                            <button>Связаться с нами</button>
+                        </div>
+                        <div class="slider_item_content__image"></div>
+                    </div>
                 </div>
             </div>
-            <div class="slider_item">
+            <!-- <div class="slider_item">
                 <div class="slider_item_switches"></div>
                 <div class="slider_item_content">
                     <div class="slider_item_content__information">
@@ -46,7 +97,7 @@
                         <button></button>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
         <section class="content">
             <article class="content__card-doctor"></article>
