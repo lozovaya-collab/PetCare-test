@@ -58,5 +58,59 @@
                 }
             }
         }
+        &_content {
+            z-index: 5;
+            position: relative;
+            display: flex;
+            align-items: center;
+            &__image {
+                position: absolute;
+                width: 25em;
+                height: 30.92em;
+                left: 45.75em;
+                top: -1.375em;
+            }
+            &__information {
+                transition: all 0.3s ease-in;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 21.8125em;
+                width: 37em;
+                margin-top: 1.4375em;
+                &_title {
+                    font-family: "Montserrat-SemiBold";
+                    font-size: 3.125em;
+                    line-height: 61px;
+                    width: 83%;
+                    color: $main-color_light-aqua;
+                    margin: 0;
+                }
+                &_description {
+                    font-family: "Montserrat-Medium";
+                    font-size: 1.875em;
+                    line-height: 37px;
+                    color: $button-color_aqua;
+                    margin: 0;
+                }
+                &_button {
+                    cursor: pointer;
+                    box-sizing: border-box;
+                    width: 300px;
+                    height: 60px;
+                    background-image: linear-gradient(90deg, $button-color_aqua 0%, $button-color_violet 100%);
+                    border-radius: 2.5em;
+                    border: none;
+                    outline: none;
+                    font-family: "Montserrat-Medium";
+                    font-size: 1.375em;
+                    line-height: 27px;
+                    color: $main-color_white;
+                    &:hover {
+                        background: linear-gradient(-90deg, $button-color_aqua 0%, $button-color_violet 100%);
+                    }
+                }
+            }
+        }
     }
 }
