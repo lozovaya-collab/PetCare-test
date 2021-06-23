@@ -37,11 +37,77 @@
                 height: 1.0625em;
             }
         }
-        &-form {
+        &-info {
             width: 100%;
             height: 100%;
             right: -100%;
-            background-color: yellow;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: $main-color_white;
+            padding: 49px 40px;
+            &_title {
+                font-family: "Montserrat-SemiBold";
+                font-size: 32px;
+                line-height: 39px;
+                width: 383px;
+                color: $main-color_blue;
+                margin: 0 0 -30px 0;
+            }
+            &_price {
+                font-family: "Montserrat-SemiBold";
+                font-size: 32px;
+                line-height: 39px;
+                color: $button-color_aqua;
+                margin-bottom: -31px;
+                & span {
+                    font-size: 40px;
+                    line-height: 49px;
+                }
+            }
+            &_button {
+                cursor: pointer;
+                width: 344px;
+                height: 60px;
+                background: $main-color_blue;
+                color: $main-color_white;
+                font-family: "Montserrat-Medium";
+                font-size: 22px;
+                line-height: 27px;
+                border-radius: 40px;
+                border: none;
+                outline: none;
+                &:hover {
+                    background: $button-color_violet;
+                }
+            }
+            &_list {
+                height: 242px;
+                width: 512px;
+                display: flex;
+                flex-direction: column;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                &__item {
+                    display: flex;
+                    align-items: center;
+                    height: 81px;
+                    margin-bottom: 24px;
+                    &-icon {
+                        height: 56px;
+                        width: 56px;
+                        margin-right: 20px;
+                    }
+                    &-text {
+                        width: 85%;
+                        font-family: "Montserrat-Regular";
+                        font-size: 22px;
+                        line-height: 27px;
+                        color: $main-color_black;
+                    }
+                }
+            }
         }
         &-blog {
             background: url('/assets/images/sleepy_cat.jpg') no-repeat center center;

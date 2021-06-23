@@ -28,6 +28,12 @@ $shadow: rgba(0, 0, 0, 0.3);
     margin: 0 auto;
 }
 
+@media screen and (max-width: 1216px) and (min-width: 768px) {
+    .wrapper {
+        width: 48em;
+    }
+}
+
 .disabled_switch {
     fill: $button-color_aqua;
 }
