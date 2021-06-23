@@ -1,11 +1,17 @@
 .slider {
-    width: 100%;
     height: 37.5em;
+    max-width: 1440px;
+    margin: 0 auto;
     overflow: hidden;
+    transition: all 0.3s linear;
     &_item {
         padding-top: 2em;
         position: relative;
+        & .wrapper {
+            display: flex;
+        }
         &_circle {
+            transition: opacity 1s linear;
             z-index: 1;
             position: absolute;
             width: 137.5em;
@@ -13,7 +19,20 @@
             left: -21.4375em;
             top: -20.75em;
             background: $main-color_blue;
+            opacity: 1;
             border-radius: 50%;
+            &-dog {
+                transition: opacity 1s linear;
+                z-index: 1;
+                position: absolute;
+                width: 137.5em;
+                height: 58.25em;
+                left: -21.4375em;
+                top: -20.75em;
+                background: url('/assets/images/dog_slider.jpg') no-repeat 122% 32%;
+                opacity: 0;
+                border-radius: 50%;
+            }
         }
         &_switches {
             position: absolute;
@@ -60,6 +79,7 @@
         }
         &_content {
             z-index: 5;
+            transition: all 1s linear;
             position: relative;
             display: flex;
             align-items: center;
