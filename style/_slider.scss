@@ -8,7 +8,7 @@
         padding-top: 2em;
         position: relative;
         & .wrapper {
-            display: flex;
+            position: relative;
         }
         &_circle {
             transition: opacity 1s linear;
@@ -71,18 +71,14 @@
                     transform: rotate(180deg);
                 }
             }
-            &__right-arrow {
-                &_icon {
-                    fill: $button-color_violet;
-                }
-            }
         }
         &_content {
             z-index: 5;
             transition: all 1s linear;
-            position: relative;
+            position: absolute;
             display: flex;
             align-items: center;
+            right: 82px;
             &__image {
                 box-sizing: border-box;
                 &-cat {

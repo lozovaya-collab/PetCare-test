@@ -32,6 +32,10 @@ $shadow: rgba(0, 0, 0, 0.3);
     fill: $button-color_aqua;
 }
 
+.active_switch {
+    fill: $button-color_violet;
+}
+
 .card {
     transition: transform 0.6s ease;
     width: 37em;
@@ -47,7 +51,11 @@ $shadow: rgba(0, 0, 0, 0.3);
 }
 
 .second_slide {
+    transition: all 1s linear;
     margin-top: 103px;
+    position: absolute;
+    right: -720px;
+    z-index: 6;
     &_information {
         width: 606px;
         height: 355px;
