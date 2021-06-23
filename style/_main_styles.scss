@@ -33,12 +33,17 @@ $shadow: rgba(0, 0, 0, 0.3);
 }
 
 .card {
+    transition: transform 0.6s ease;
     width: 37em;
     height: 39.375em;
     box-shadow: 0em 0em 0.625em rgba(0, 0, 0, 0.25);
     border-radius: 2.5em;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    &:hover {
+        transform: scale(1.01);
+    }
 }
 
 .second_slide {

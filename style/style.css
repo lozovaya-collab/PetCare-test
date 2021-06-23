@@ -24,6 +24,10 @@
 }
 
 .card {
+  -webkit-transition: -webkit-transform 0.6s ease;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
   width: 37em;
   height: 39.375em;
   -webkit-box-shadow: 0em 0em 0.625em rgba(0, 0, 0, 0.25);
@@ -36,6 +40,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .second_slide {
@@ -424,7 +434,20 @@
           justify-content: space-between;
 }
 
+.content__card {
+  position: relative;
+  cursor: pointer;
+}
+
 .content__card-doctor {
+  -webkit-transition: right 1s ease;
+  transition: right 1s ease;
+  position: absolute;
+  right: 0;
+  z-index: 7;
+  border-radius: 40px;
+  height: 100%;
+  width: 100%;
   background: url("/assets/images/dog_consultation.jpg") no-repeat center center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -454,6 +477,13 @@
 .content__card-doctor__arrow {
   width: 14.375em;
   height: 1.0625em;
+}
+
+.content__card-form {
+  width: 100%;
+  height: 100%;
+  right: -100%;
+  background-color: yellow;
 }
 
 .content__card-blog {

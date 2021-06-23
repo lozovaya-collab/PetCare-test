@@ -7,7 +7,16 @@
         justify-content: space-between;
     }
     &__card {
+        position: relative;
+        cursor: pointer;
         &-doctor {
+            transition: right 1s ease;
+            position: absolute;
+            right: 0;
+            z-index: 7;
+            border-radius: 40px;
+            height: 100%;
+            width: 100%;
             background: url('/assets/images/dog_consultation.jpg') no-repeat center center;
             display: flex;
             color: $main-color_white;
@@ -27,6 +36,12 @@
                 width: 14.375em;
                 height: 1.0625em;
             }
+        }
+        &-form {
+            width: 100%;
+            height: 100%;
+            right: -100%;
+            background-color: yellow;
         }
         &-blog {
             background: url('/assets/images/sleepy_cat.jpg') no-repeat center center;
