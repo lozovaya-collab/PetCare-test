@@ -1,0 +1,34 @@
+.footer {
+    width: 100%;
+    height: 10em;
+    display: flex;
+    align-items: center;
+    &_content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__contacts {
+            display: flex;
+            flex-direction: column;
+            height: 4.125em;
+            justify-content: space-between;
+            margin-right: -1.4375em;
+            &_link {
+                text-decoration: none;
+                color: $button-color_violet;
+                font-family: "Montserrat-Medium";
+                font-size: 24px;
+                line-height: 29px;
+                &:hover {
+                    color: $button-color_aqua;
+                }
+            }
+        }
+        &__copy-rights {
+            font-family: "Montserrat-Regular";
+            font-size: 20px;
+            line-height: 24px;
+            color: $main-color_blue;
+        }
+    }
+}
