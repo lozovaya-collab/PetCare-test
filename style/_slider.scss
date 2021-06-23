@@ -64,11 +64,12 @@
             display: flex;
             align-items: center;
             &__image {
-                position: absolute;
-                width: 25em;
-                height: 30.92em;
-                left: 45.75em;
-                top: 1.8125em;
+                box-sizing: border-box;
+                &-cat {
+                    padding-top: 1.75em;
+                    width: 25em;
+                    height: 30.92em;
+                }
             }
             &__information {
                 transition: all 0.3s ease-in;
@@ -77,7 +78,8 @@
                 justify-content: space-between;
                 height: 21.8125em;
                 width: 37em;
-                margin-top: 4.6875em;
+                margin-right: 8.875em;
+                margin-top: -2em;
                 &_title {
                     font-family: "Montserrat-SemiBold";
                     font-size: 3.125em;
