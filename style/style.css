@@ -1010,7 +1010,7 @@ a {
 }
 
 .content__card-blog {
-  background: url("./assets/images/sleepy_cat.jpg") no-repeat center center;
+  background: url("../assets/images/sleepy_cat.jpg") no-repeat center center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
