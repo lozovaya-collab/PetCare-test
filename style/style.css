@@ -1,16 +1,16 @@
 @font-face {
   font-family: "Montserrat-Medium";
-  src: url("./assets/fonts/Montserrat-Medium.ttf");
+  src: url("../assets/fonts/Montserrat-Medium.ttf");
 }
 
 @font-face {
   font-family: "Montserrat-Regular";
-  src: url("./assets/fonts/Montserrat-Regular.ttf");
+  src: url("../assets/fonts/Montserrat-Regular.ttf");
 }
 
 @font-face {
   font-family: "Montserrat-SemiBold";
-  src: url("./assets/fonts/Montserrat-SemiBold.ttf");
+  src: url("../assets/fonts/Montserrat-SemiBold.ttf");
 }
 
 .wrapper {
@@ -389,7 +389,7 @@ a {
   height: 58.25em;
   left: -21.4375em;
   top: -20.75em;
-  background: url("./assets/images/dog_slider.jpg") no-repeat 122% 32%;
+  background: url("../assets/images/dog_slider.jpg") no-repeat 122% 32%;
   opacity: 0;
   border-radius: 50%;
 }
@@ -625,7 +625,7 @@ a {
   .slider_items_circle-dog {
     top: -427px;
     left: -32.4375em;
-    background: url("./assets/images/dog_slider.jpg") no-repeat 142% 32%;
+    background: url("../assets/images/dog_slider.jpg") no-repeat 142% 32%;
   }
   .slider_items_content-first-slide {
     right: -19px;
@@ -807,7 +807,7 @@ a {
             flex-direction: column;
     right: -284px;
     position: absolute;
-    background: url("./assets/images/dog-mobile_slider.jpg") no-repeat 0% 32%;
+    background: url("../assets/images/dog-mobile_slider.jpg") no-repeat 0% 32%;
     border-radius: 24px;
     padding-top: 0;
     margin: 0;
@@ -876,7 +876,7 @@ a {
   border-radius: 40px;
   height: 100%;
   width: 100%;
-  background: url("./assets/images/dog_consultation.jpg") no-repeat center center;
+  background: url("../assets/images/dog_consultation.jpg") no-repeat center center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1081,7 +1081,7 @@ a {
     height: 27.375em;
   }
   .content__card-doctor {
-    background: url("./assets/images/dog_consultation.jpg") no-repeat bottom left;
+    background: url("../assets/images/dog_consultation.jpg") no-repeat bottom left;
     background-size: 445px 473px;
   }
   .content__card-doctor__question {
@@ -1154,7 +1154,7 @@ a {
     line-height: 25px;
   }
   .content__card-blog {
-    background: url("./assets/images/sleepy_cat.jpg") no-repeat bottom left;
+    background: url("../assets/images/sleepy_cat.jpg") no-repeat bottom left;
     background-size: 445px 473px;
   }
   .content__card-blog_information {
@@ -1246,7 +1246,7 @@ a {
     display: block;
   }
   .content__card-blog {
-    background: url("/assets/images/sleppy_cat-mobile.jpg") no-repeat center center;
+    background: url("../assets/images/sleppy_cat-mobile.jpg") no-repeat center center;
     border-radius: 24px;
   }
   .content__card-blog_information {
