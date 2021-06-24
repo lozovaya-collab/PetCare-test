@@ -30,10 +30,16 @@ $shadow: rgba(0, 0, 0, 0.3);
 
 .disabled_switch {
     fill: $button-color_aqua;
+    &-mobile {
+        background: $main-color_blue;
+    }
 }
 
 .active_switch {
     fill: $button-color_violet;
+    &-mobile {
+        background: $main-color_light-aqua;
+    }
 }
 
 .card {

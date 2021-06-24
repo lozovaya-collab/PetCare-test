@@ -3,7 +3,26 @@
         height: 464px;
         width: 100%;
         display: flex;
-        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &_switches-mobile {
+            display: flex;
+            margin-top: 16px;
+            justify-content: space-between;
+            width: 2.5em;
+            &_right,
+            &_left {
+                cursor: pointer;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                border: none;
+                outline: none;
+                &:hover {
+                    background: $main-color_blue;
+                }
+            }
+        }
         &_items {
             padding-top: 2em;
             width: 280px;

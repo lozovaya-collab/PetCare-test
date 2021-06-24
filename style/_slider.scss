@@ -4,10 +4,13 @@
     margin: 0 auto;
     overflow: hidden;
     transition: all 0.3s linear;
+    &_switches-mobile {
+        display: none;
+    }
     &_items {
         padding-top: 2em;
         position: relative;
-        overflow: hidden;
+        overflow: visible;
         & .wrapper {
             position: relative;
         }
