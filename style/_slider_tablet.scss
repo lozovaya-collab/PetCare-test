@@ -1,0 +1,46 @@
+@media screen and (max-width: 1216px) and (min-width: 768px) {
+    .slider {
+        max-width: 1216px;
+        height: 31.5em;
+        &_item {
+            &_circle {
+                left: -32.4375em;
+                top: -427px;
+                &-dog {
+                    top: -427px;
+                    left: -32.4375em;
+                    background: url('/assets/images/dog_slider.jpg') no-repeat 142% 32%;
+                }
+            }
+            &_content {
+                right: -19px;
+                &__image {
+                    &-cat {
+                        padding-top: 0.75em;
+                        width: 294.34px;
+                        height: 364px;
+                    }
+                }
+                &__information {
+                    height: 17.8125em;
+                    width: 26em;
+                    margin-right: 4.875em;
+                    margin-top: 3em;
+                    &_title {
+                        font-size: 32px;
+                        line-height: 38px;
+                    }
+                    &_description {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                    &_button {
+                        width: 226px;
+                        height: 53px;
+                        font-size: 21px;
+                    }
+                }
+            }
+        }
+    }
+}

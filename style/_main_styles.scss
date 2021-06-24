@@ -28,12 +28,6 @@ $shadow: rgba(0, 0, 0, 0.3);
     margin: 0 auto;
 }
 
-@media screen and (max-width: 1216px) and (min-width: 768px) {
-    .wrapper {
-        width: 48em;
-    }
-}
-
 .disabled_switch {
     fill: $button-color_aqua;
 }
@@ -43,6 +37,7 @@ $shadow: rgba(0, 0, 0, 0.3);
 }
 
 .card {
+    box-sizing: border-box;
     transition: transform 0.6s ease;
     width: 37em;
     height: 39.375em;
@@ -109,5 +104,45 @@ $shadow: rgba(0, 0, 0, 0.3);
                 background: $button-color_violet;
             }
         }
+    }
+}
+
+@media screen and (max-width: 1216px) and (min-width: 768px) {
+    .wrapper {
+        width: 48em;
+    }
+    .second_slide {
+        transition: all 1s linear;
+        margin-top: 74px;
+        position: absolute;
+        right: -800px; //374
+        z-index: 6;
+        &_information {
+            width: 390px;
+            height: 280px;
+            &_title {
+                font-size: 32px;
+                line-height: 38px;
+            }
+            &_description {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            &_price {
+                font-size: 19px;
+                & span {
+                    font-size: 30px;
+                }
+            }
+            &_button {
+                width: 226px;
+                height: 53px;
+                font-size: 21px;
+            }
+        }
+    }
+    .card {
+        width: 360px;
+        height: 438px;
     }
 }

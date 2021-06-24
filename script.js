@@ -5,13 +5,24 @@ const slides = document.querySelector('.slider_item').querySelector('.wrapper').
 
 const bg = document.querySelector('.slider_item_circle')
 const bgDog = document.querySelector('.slider_item_circle-dog')
+
 const nextContent = () => {
+    const windowWidth = window.innerWidth
+
     bg.style.opacity = "0"
     bgDog.style.opacity = "1"
-    slides[1].style.right = "1440px"
-    slides[2].style.right = "608px"
+
+    if (windowWidth >= 1216) {
+        slides[1].style.right = "1440px"
+        slides[2].style.right = "608px"
+    } else if (windowWidth >= 768) {
+        slides[1].style.right = "1216px"
+        slides[2].style.right = "374px"
+    }
+
     prevSlide.removeAttribute('disabled')
     nextSlide.setAttribute('disabled', 'disabled')
+
     nextSlide.classList.toggle('disabled_switch')
     prevSlide.classList.toggle('disabled_switch')
     nextSlide.classList.toggle('active_switch')
@@ -19,12 +30,22 @@ const nextContent = () => {
 }
 
 const prevContent = () => {
+    const windowWidth = window.innerWidth
+
     bgDog.style.opacity = "0"
     bg.style.opacity = "1"
-    slides[1].style.right = "82px"
-    slides[2].style.right = "-720px"
+
+    if (windowWidth >= 1216) {
+        slides[1].style.right = "82px"
+        slides[2].style.right = "-720px"
+    } else if (windowWidth >= 768) {
+        slides[1].style.right = "-19px"
+        slides[2].style.right = "-720px"
+    }
+
     nextSlide.removeAttribute('disabled')
     prevSlide.setAttribute('disabled', 'disabled')
+
     nextSlide.classList.toggle('disabled_switch')
     prevSlide.classList.toggle('disabled_switch')
     nextSlide.classList.toggle('active_switch')
@@ -60,16 +81,14 @@ const closePopup = document.querySelector('.popup_form_cross-icon')
 const buttonPopup = document.querySelector('.popup_form_button')
 
 let isOpen = false
-let sendIt
+let sendIt = false
 
-const showPopup = (sendIt) => {
+const showPopup = () => {
+
     if (!isOpen) {
         popup.style.display = "flex"
         isOpen = true
-    } else if (isOpen && sendIt == undefined) {
-        popup.style.display = "none"
-        isOpen = false
-    } else if (isOpen && sendIt == true) {
+    } else if (isOpen) {
         popup.style.display = "none"
         isOpen = false
     }
@@ -80,6 +99,7 @@ closePopup.addEventListener('click', showPopup)
 buttonPopup.addEventListener('click', () => {
     sendIt = true
     const values = document.querySelectorAll('.popup_form_details_inputs_item')
+
     for (let i = 0; i < values.length; i++) {
         if (values[i].hasAttribute("required") && values[i].value === "") {
             sendIt = false
@@ -89,5 +109,8 @@ buttonPopup.addEventListener('click', () => {
         }
     }
 
-    showPopup(sendIt)
+    if (sendIt) {
+        popup.style.display = "none"
+        isOpen = false
+    }
 })

@@ -1,0 +1,18 @@
+@media screen and (max-width: 1216px) and (min-width: 768px) {
+    .footer {
+        &_content {
+            &__contacts {
+                height: 3.125em;
+                margin-right: 0;
+                &_link {
+                    font-size: 19px;
+                    line-height: 25px;
+                }
+            }
+            &__copy-rights {
+                font-size: 19px;
+                line-height: 22px;
+            }
+        }
+    }
+}

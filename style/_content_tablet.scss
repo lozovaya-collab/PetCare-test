@@ -1,0 +1,92 @@
+@media screen and (max-width: 1216px) and (min-width: 768px) {
+    .content {
+        height: 27.375em;
+        &__card {
+            &-doctor {
+                background: url('/assets/images/dog_consultation.jpg') no-repeat bottom left;
+                background-size: 445px 473px;
+                &__question {
+                    width: 12.125em;
+                    font-size: 25px;
+                    line-height: 30px;
+                    padding-top: 224px;
+                }
+                &__arrow {
+                    width: 14.375em;
+                    height: 1.0625em;
+                }
+            }
+            &-info {
+                width: 100%;
+                height: 100%;
+                right: -100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-color: $main-color_white;
+                padding: 49px 30px;
+                &_title {
+                    font-family: "Montserrat-SemiBold";
+                    font-size: 20px;
+                    line-height: 25px;
+                    width: 383px;
+                    color: $main-color_blue;
+                    margin: 0 0 -5px 0;
+                }
+                &_price {
+                    font-family: "Montserrat-SemiBold";
+                    font-size: 20px;
+                    line-height: 39px;
+                    color: $button-color_aqua;
+                    margin-bottom: -6px;
+                    & span {
+                        font-size: 30px;
+                        line-height: 49px;
+                    }
+                }
+                &_button {
+                    width: 261px;
+                    height: 50px;
+                    font-size: 18px;
+                    margin-top: -10px;
+                }
+                &_list {
+                    height: 242px;
+                    width: 300px;
+                    &__item {
+                        height: 61px;
+                        margin-bottom: 10px;
+                        &-icon {
+                            height: 46px;
+                            width: 46px;
+                            margin-right: 10px;
+                        }
+                        &-text {
+                            font-size: 16px;
+                            line-height: 25px;
+                        }
+                    }
+                }
+            }
+            &-blog {
+                background: url('/assets/images/sleepy_cat.jpg') no-repeat bottom left;
+                background-size: 445px 473px;
+                &_information {
+                    height: 14.625em;
+                    &__headline {
+                        font-size: 24px;
+                        line-height: 30px;
+                    }
+                    &__details {
+                        font-size: 19px;
+                        line-height: 26px;
+                    }
+                }
+                &_footer {
+                    padding-left: 40 px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
