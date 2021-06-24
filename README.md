@@ -1,5 +1,5 @@
 ﻿# PetCare-test
-[1][Deploy]
+[Deploy][1]
 
 [1]: https://lozovaya-collab.github.io/PetCare-test/
  
