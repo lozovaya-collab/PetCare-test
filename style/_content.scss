@@ -17,7 +17,7 @@
             border-radius: 40px;
             height: 100%;
             width: 100%;
-            background: url('/assets/images/dog_consultation.jpg') no-repeat center center;
+            background: url('./assets/images/dog_consultation.jpg') no-repeat center center;
             display: flex;
             color: $main-color_white;
             flex-direction: column;
@@ -113,7 +113,7 @@
             }
         }
         &-blog {
-            background: url('/assets/images/sleepy_cat.jpg') no-repeat center center;
+            background: url('./assets/images/sleepy_cat.jpg') no-repeat center center;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;

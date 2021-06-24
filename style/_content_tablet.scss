@@ -3,7 +3,7 @@
         height: 27.375em;
         &__card {
             &-doctor {
-                background: url('/assets/images/dog_consultation.jpg') no-repeat bottom left;
+                background: url('./assets/images/dog_consultation.jpg') no-repeat bottom left;
                 background-size: 445px 473px;
                 &__question {
                     width: 12.125em;
@@ -69,7 +69,7 @@
                 }
             }
             &-blog {
-                background: url('/assets/images/sleepy_cat.jpg') no-repeat bottom left;
+                background: url('./assets/images/sleepy_cat.jpg') no-repeat bottom left;
                 background-size: 445px 473px;
                 &_information {
                     height: 14.625em;
