@@ -174,3 +174,32 @@ buttonPopup.addEventListener('click', () => {
         isOpen = false
     }
 })
+
+// Бургер
+const burger = document.querySelector('.header_content__burger')
+const menu = document.querySelector('.burger-menu')
+const crossBurger = document.querySelector('.burger-menu_cross-icon')
+const linkBurger = document.querySelectorAll('.burger-menu_list_item')
+
+let isOpenBurger = false
+
+const openBurger = () => {
+    if (!isOpenBurger) {
+        menu.style.right = "0"
+        isOpenBurger = true
+    }
+}
+
+const closeBurger = () => {
+    if (isOpenBurger) {
+        menu.style.right = "100%"
+        isOpenBurger = false
+    }
+}
+
+burger.addEventListener('click', openBurger)
+crossBurger.addEventListener('click', closeBurger)
+
+for (let i = 0; i < linkBurger.length; i++) {
+    linkBurger[i].addEventListener('click', closeBurger)
+}

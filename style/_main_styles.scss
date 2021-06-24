@@ -28,6 +28,10 @@ $shadow: rgba(0, 0, 0, 0.3);
     margin: 0 auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 .disabled_switch {
     fill: $button-color_aqua;
     &-mobile {
@@ -40,6 +44,10 @@ $shadow: rgba(0, 0, 0, 0.3);
     &-mobile {
         background: $main-color_light-aqua;
     }
+}
+
+.burger-menu {
+    display: none;
 }
 
 .card {
@@ -74,5 +82,50 @@ $shadow: rgba(0, 0, 0, 0.3);
     .card {
         width: 280px;
         height: 405px;
+    }
+    .burger-menu {
+        transition: all 1s linear;
+        z-index: 15;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: 100%;
+        width: 100%;
+        height: 100vh;
+        background-color: $main-color_blue;
+        &_cross-icon {
+            cursor: pointer;
+            fill: $main-color_light-aqua;
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            left: 82.5%;
+            top: 5.28%;
+            &:hover {
+                fill: $main-color_white;
+            }
+        }
+        &_list {
+            padding: 0;
+            margin: 0;
+            width: 124px;
+            height: 241px;
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            &_item a {
+                font-family: "Montserrat-Regular";
+                font-size: 24px;
+                line-height: 29px;
+                color: $main-color_light-aqua;
+                &:hover {
+                    color: $main-color_white;
+                    text-decoration: underline;
+                }
+            }
+        }
     }
 }

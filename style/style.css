@@ -19,6 +19,10 @@
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 .disabled_switch {
   fill: #A0D2DB;
 }
@@ -33,6 +37,10 @@
 
 .active_switch-mobile {
   background: #BEE7E8;
+}
+
+.burger-menu {
+  display: none;
 }
 
 .card {
@@ -79,6 +87,65 @@
   .card {
     width: 280px;
     height: 405px;
+  }
+  .burger-menu {
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
+    z-index: 15;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    right: 100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #394573;
+  }
+  .burger-menu_cross-icon {
+    cursor: pointer;
+    fill: #BEE7E8;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 82.5%;
+    top: 5.28%;
+  }
+  .burger-menu_cross-icon:hover {
+    fill: #FFFF;
+  }
+  .burger-menu_list {
+    padding: 0;
+    margin: 0;
+    width: 124px;
+    height: 241px;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+  }
+  .burger-menu_list_item a {
+    font-family: "Montserrat-Regular";
+    font-size: 24px;
+    line-height: 29px;
+    color: #BEE7E8;
+  }
+  .burger-menu_list_item a:hover {
+    color: #FFFF;
+    text-decoration: underline;
   }
 }
 
@@ -159,13 +226,14 @@
   margin-left: -0.5em;
 }
 
-.header_content__menu_item {
+.header_content__menu_item a {
   font-family: "Montserrat-Medium";
+  color: #333333;
   font-size: 1.4375em;
   line-height: 1.75em;
 }
 
-.header_content__menu_item:hover {
+.header_content__menu_item a:hover {
   cursor: pointer;
   color: #726DA8;
   text-decoration: underline;
@@ -211,7 +279,7 @@
     width: 24.75em;
     margin-left: 0;
   }
-  .header_content__menu_item {
+  .header_content__menu_item a {
     font-size: 1.125em;
   }
   .header_content__social-nets {
@@ -241,10 +309,14 @@
     height: 2.4375em;
   }
   .header_content__burger {
+    cursor: pointer;
     display: block;
     fill: #726DA8;
     width: 2em;
     height: 1.375em;
+  }
+  .header_content__burger:hover {
+    fill: #A0D2DB;
   }
   .header_content__logo {
     width: 120.56px;

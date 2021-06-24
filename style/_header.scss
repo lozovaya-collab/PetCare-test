@@ -40,8 +40,9 @@
             list-style-type: none;
             padding: 0;
             margin-left: -0.5em;
-            &_item {
+            &_item a {
                 font-family: "Montserrat-Medium";
+                color: $main-color_black;
                 font-size: 1.4375em;
                 line-height: 1.75em;
                 &:hover {

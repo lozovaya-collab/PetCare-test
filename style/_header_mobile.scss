@@ -8,10 +8,14 @@
             margin-top: 2em;
             height: 2.4375em;
             &__burger {
+                cursor: pointer;
                 display: block;
                 fill: $button-color_violet;
                 width: 2em;
                 height: 1.375em;
+                &:hover {
+                    fill: $button-color_aqua;
+                }
             }
             &__logo {
                 width: 120.56px;
