@@ -29,6 +29,9 @@
             font-size: 20px;
             line-height: 24px;
             color: $main-color_blue;
+            & br {
+                display: none;
+            }
         }
     }
 }
