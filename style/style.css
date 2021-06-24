@@ -271,6 +271,7 @@
 .slider_items {
   padding-top: 2em;
   position: relative;
+  overflow: hidden;
 }
 
 .slider_items .wrapper {
@@ -421,6 +422,10 @@
   line-height: 37px;
   color: #A0D2DB;
   margin: -0.4em 0 0 0;
+}
+
+.slider_items_content-first-slide__information_description_mobile {
+  display: none;
 }
 
 .slider_items_content-first-slide__information_button {
@@ -591,6 +596,139 @@
     width: 226px;
     height: 53px;
     font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  .slider {
+    height: 464px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .slider_items {
+    padding-top: 2em;
+    width: 280px;
+    height: 25em;
+    position: relative;
+    overflow: hidden;
+  }
+  .slider_items .wrapper {
+    position: relative;
+  }
+  .slider_items_circle {
+    display: none;
+  }
+  .slider_items_circle-dog {
+    display: none;
+  }
+  .slider_items_switches {
+    display: none;
+  }
+  .slider_items_content-first-slide {
+    overflow: hidden;
+    width: 100%;
+    height: 25em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    right: 0;
+    background-color: #394573;
+    border-radius: 24px;
+    padding-top: 2em;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .slider_items_content-first-slide__image {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: relative;
+  }
+  .slider_items_content-first-slide__image-cat {
+    position: absolute;
+    width: 150px;
+    height: 185.5px;
+    left: 25px;
+    top: -29px;
+  }
+  .slider_items_content-first-slide__information {
+    height: 186px;
+    width: 240px;
+    margin-right: 0;
+    margin-top: 0;
+  }
+  .slider_items_content-first-slide__information_title {
+    font-size: 24px;
+    line-height: 29px;
+    width: 253px;
+  }
+  .slider_items_content-first-slide__information_description {
+    display: none;
+  }
+  .slider_items_content-first-slide__information_description_mobile {
+    display: block;
+    font-family: "Montserrat-Medium";
+    font-size: 14px;
+    line-height: 17px;
+    margin: -0.4em 0 0 0;
+    color: #A0D2DB;
+  }
+  .slider_items_content-first-slide__information_button {
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .slider_items_content-second-slide {
+    overflow: hidden;
+    width: 100%;
+    height: 25em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    right: -284px;
+    position: absolute;
+    background: url("/assets/images/dog-mobile_slider.jpg") no-repeat 0% 32%;
+    border-radius: 24px;
+    padding-top: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .slider_items_content-second-slide_information {
+    width: 201px;
+    height: 336px;
+    padding: 32px 0 0 18px;
+  }
+  .slider_items_content-second-slide_information_title {
+    width: 240px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .slider_items_content-second-slide_information_description {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .slider_items_content-second-slide_information_price {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 95px;
+  }
+  .slider_items_content-second-slide_information_price span {
+    font-size: 22px;
+    line-height: 27px;
+  }
+  .slider_items_content-second-slide_information_button {
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 17px;
   }
 }
 

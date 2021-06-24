@@ -1,7 +1,8 @@
-// Слайдер
+// Слайдер (desktop & tablet)
 const prevSlide = document.querySelector('.slider_items_switches__left-arrow')
 const nextSlide = document.querySelector('.slider_items_switches__right-arrow')
 const slides = document.querySelector('.slider_items').querySelector('.wrapper').children
+const slider = document.querySelector('.slider_items')
 
 const bg = document.querySelector('.slider_items_circle')
 const bgDog = document.querySelector('.slider_items_circle-dog')
@@ -56,7 +57,27 @@ const prevContent = () => {
 nextSlide.addEventListener('click', nextContent)
 prevSlide.addEventListener('click', prevContent)
 
+// Слайдер (mobile)
+slider.addEventListener('mousedown', (e) => {
+    const windowWidth = window.innerWidth
+    const position = e.x - 164
 
+    if (windowWidth < 768) {
+
+        if (position > 140) {
+            slides[1].style.right = "284px"
+            slides[2].style.right = "0"
+        } else {
+            if (e.target.innerHTML != "Подобрать план") {
+                slides[1].style.right = "0"
+                slides[2].style.right = "-284px"
+            }
+        }
+
+    }
+
+
+})
 
 // Карточка с формой (openForm)
 const doctorCard = document.querySelector('.content__card-doctor')

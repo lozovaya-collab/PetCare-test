@@ -7,6 +7,7 @@
     &_items {
         padding-top: 2em;
         position: relative;
+        overflow: hidden;
         & .wrapper {
             position: relative;
         }
@@ -111,6 +112,9 @@
                         line-height: 37px;
                         color: $button-color_aqua;
                         margin: -0.4em 0 0 0;
+                        &_mobile {
+                            display: none;
+                        }
                     }
                     &_button {
                         transition: all 0.2s ease-in;
