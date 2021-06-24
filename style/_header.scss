@@ -10,6 +10,9 @@
         align-items: center;
         justify-content: space-between;
         margin-top: 1.125em;
+        &__burger {
+            display: none;
+        }
         &__logo {
             display: flex;
             align-items: center;

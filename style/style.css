@@ -54,115 +54,19 @@
           transform: scale(1.01);
 }
 
-.second_slide {
-  -webkit-transition: all 1s linear;
-  transition: all 1s linear;
-  margin-top: 103px;
-  position: absolute;
-  right: -720px;
-  z-index: 6;
-}
-
-.second_slide_information {
-  width: 606px;
-  height: 355px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.second_slide_information_title {
-  width: 606px;
-  font-family: "Montserrat-SemiBold";
-  font-size: 50px;
-  line-height: 61px;
-  color: #394573;
-  margin: 0;
-}
-
-.second_slide_information_description {
-  font-family: "Montserrat-Medium";
-  font-size: 30px;
-  line-height: 37px;
-  color: #394573;
-  margin: 0;
-}
-
-.second_slide_information_price {
-  font-family: "Montserrat-SemiBold";
-  font-size: 36px;
-  line-height: 44px;
-  color: #394573;
-}
-
-.second_slide_information_price span {
-  font-size: 42px;
-  line-height: 51px;
-}
-
-.second_slide_information_button {
-  cursor: pointer;
-  width: 300px;
-  height: 60px;
-  color: #FFFF;
-  background: #394573;
-  border-radius: 40px;
-  font-family: "Montserrat-Medium";
-  font-size: 22px;
-  line-height: 27px;
-  border: none;
-  outline: none;
-}
-
-.second_slide_information_button:hover {
-  background: #726DA8;
-}
-
 @media screen and (max-width: 1216px) and (min-width: 768px) {
   .wrapper {
     width: 48em;
   }
-  .second_slide {
-    -webkit-transition: all 1s linear;
-    transition: all 1s linear;
-    margin-top: 74px;
-    position: absolute;
-    right: -800px;
-    z-index: 6;
-  }
-  .second_slide_information {
-    width: 390px;
-    height: 280px;
-  }
-  .second_slide_information_title {
-    font-size: 32px;
-    line-height: 38px;
-  }
-  .second_slide_information_description {
-    font-size: 20px;
-    line-height: 30px;
-  }
-  .second_slide_information_price {
-    font-size: 19px;
-  }
-  .second_slide_information_price span {
-    font-size: 30px;
-  }
-  .second_slide_information_button {
-    width: 226px;
-    height: 53px;
-    font-size: 21px;
-  }
   .card {
     width: 360px;
     height: 438px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  .wrapper {
+    width: 17.5em;
   }
 }
 
@@ -192,6 +96,10 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 1.125em;
+}
+
+.header_content__burger {
+  display: none;
 }
 
 .header_content__logo {
@@ -303,6 +211,54 @@
   }
 }
 
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  .header {
+    height: 4.4375em;
+  }
+  .header_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 2em;
+    height: 2.4375em;
+  }
+  .header_content__burger {
+    display: block;
+    fill: #726DA8;
+    width: 2em;
+    height: 1.375em;
+  }
+  .header_content__logo {
+    width: 120.56px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .header_content__logo_icon {
+    width: 38.4px;
+    height: 38.56px;
+    margin-top: 3px;
+  }
+  .header_content__logo_name {
+    font-family: "Montserrat-SemiBold";
+    font-size: 17px;
+    line-height: 2.125em;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .header_content__menu {
+    display: none;
+  }
+  .header_content__social-nets {
+    display: none;
+  }
+}
+
 .slider {
   height: 37.5em;
   max-width: 1440px;
@@ -312,16 +268,16 @@
   transition: all 0.3s linear;
 }
 
-.slider_item {
+.slider_items {
   padding-top: 2em;
   position: relative;
 }
 
-.slider_item .wrapper {
+.slider_items .wrapper {
   position: relative;
 }
 
-.slider_item_circle {
+.slider_items_circle {
   -webkit-transition: opacity 1s linear;
   transition: opacity 1s linear;
   z-index: 1;
@@ -335,7 +291,7 @@
   border-radius: 50%;
 }
 
-.slider_item_circle-dog {
+.slider_items_circle-dog {
   -webkit-transition: opacity 1s linear;
   transition: opacity 1s linear;
   z-index: 1;
@@ -349,7 +305,7 @@
   border-radius: 50%;
 }
 
-.slider_item_switches {
+.slider_items_switches {
   position: absolute;
   z-index: 7;
   display: -webkit-box;
@@ -364,7 +320,7 @@
   width: 100%;
 }
 
-.slider_item_switches__left-arrow, .slider_item_switches__right-arrow {
+.slider_items_switches__left-arrow, .slider_items_switches__right-arrow {
   cursor: pointer;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
@@ -387,26 +343,26 @@
           filter: drop-shadow(0em 0em 10em rgba(0, 0, 0, 0.3));
 }
 
-.slider_item_switches__left-arrow:hover, .slider_item_switches__right-arrow:hover {
+.slider_items_switches__left-arrow:hover, .slider_items_switches__right-arrow:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.slider_item_switches__left-arrow_icon, .slider_item_switches__right-arrow_icon {
+.slider_items_switches__left-arrow_icon, .slider_items_switches__right-arrow_icon {
   width: 0.8125em;
   height: 1.4375em;
 }
 
-.slider_item_switches__left-arrow_icon:hover, .slider_item_switches__right-arrow_icon:hover {
+.slider_items_switches__left-arrow_icon:hover, .slider_items_switches__right-arrow_icon:hover {
   fill: #A0D2DB;
 }
 
-.slider_item_switches__left-arrow_icon {
+.slider_items_switches__left-arrow_icon {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.slider_item_content {
+.slider_items_content-first-slide {
   z-index: 5;
   -webkit-transition: all 1s linear;
   transition: all 1s linear;
@@ -420,18 +376,18 @@
   right: 82px;
 }
 
-.slider_item_content__image {
+.slider_items_content-first-slide__image {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.slider_item_content__image-cat {
+.slider_items_content-first-slide__image-cat {
   padding-top: 1.75em;
   width: 25em;
   height: 30.92em;
 }
 
-.slider_item_content__information {
+.slider_items_content-first-slide__information {
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
   display: -webkit-box;
@@ -450,7 +406,7 @@
   margin-top: -2em;
 }
 
-.slider_item_content__information_title {
+.slider_items_content-first-slide__information_title {
   font-family: "Montserrat-SemiBold";
   font-size: 3.125em;
   line-height: 61px;
@@ -459,7 +415,7 @@
   margin: 0;
 }
 
-.slider_item_content__information_description {
+.slider_items_content-first-slide__information_description {
   font-family: "Montserrat-Medium";
   font-size: 1.875em;
   line-height: 37px;
@@ -467,7 +423,7 @@
   margin: -0.4em 0 0 0;
 }
 
-.slider_item_content__information_button {
+.slider_items_content-first-slide__information_button {
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   cursor: pointer;
@@ -486,11 +442,82 @@
   color: #FFFF;
 }
 
-.slider_item_content__information_button:hover {
+.slider_items_content-first-slide__information_button:hover {
   background: -webkit-gradient(linear, right top, left top, from(#A0D2DB), to(#726DA8));
   background: linear-gradient(-90deg, #A0D2DB 0%, #726DA8 100%);
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+.slider_items_content-second-slide {
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+  margin-top: 103px;
+  position: absolute;
+  right: -720px;
+  z-index: 6;
+}
+
+.slider_items_content-second-slide_information {
+  width: 606px;
+  height: 355px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider_items_content-second-slide_information_title {
+  width: 606px;
+  font-family: "Montserrat-SemiBold";
+  font-size: 50px;
+  line-height: 61px;
+  color: #394573;
+  margin: 0;
+}
+
+.slider_items_content-second-slide_information_description {
+  font-family: "Montserrat-Medium";
+  font-size: 30px;
+  line-height: 37px;
+  color: #394573;
+  margin: 0;
+}
+
+.slider_items_content-second-slide_information_price {
+  font-family: "Montserrat-SemiBold";
+  font-size: 36px;
+  line-height: 44px;
+  color: #394573;
+}
+
+.slider_items_content-second-slide_information_price span {
+  font-size: 42px;
+  line-height: 51px;
+}
+
+.slider_items_content-second-slide_information_button {
+  cursor: pointer;
+  width: 300px;
+  height: 60px;
+  color: #FFFF;
+  background: #394573;
+  border-radius: 40px;
+  font-family: "Montserrat-Medium";
+  font-size: 22px;
+  line-height: 27px;
+  border: none;
+  outline: none;
+}
+
+.slider_items_content-second-slide_information_button:hover {
+  background: #726DA8;
 }
 
 @media screen and (max-width: 1216px) and (min-width: 768px) {
@@ -498,38 +525,69 @@
     max-width: 1216px;
     height: 31.5em;
   }
-  .slider_item_circle {
+  .slider_items_circle {
     left: -32.4375em;
     top: -427px;
   }
-  .slider_item_circle-dog {
+  .slider_items_circle-dog {
     top: -427px;
     left: -32.4375em;
     background: url("/assets/images/dog_slider.jpg") no-repeat 142% 32%;
   }
-  .slider_item_content {
+  .slider_items_content-first-slide {
     right: -19px;
   }
-  .slider_item_content__image-cat {
+  .slider_items_content-first-slide__image-cat {
     padding-top: 0.75em;
     width: 294.34px;
     height: 364px;
   }
-  .slider_item_content__information {
+  .slider_items_content-first-slide__information {
     height: 17.8125em;
     width: 26em;
     margin-right: 4.875em;
     margin-top: 3em;
   }
-  .slider_item_content__information_title {
+  .slider_items_content-first-slide__information_title {
     font-size: 32px;
     line-height: 38px;
   }
-  .slider_item_content__information_description {
+  .slider_items_content-first-slide__information_description {
     font-size: 20px;
     line-height: 30px;
   }
-  .slider_item_content__information_button {
+  .slider_items_content-first-slide__information_button {
+    width: 226px;
+    height: 53px;
+    font-size: 21px;
+  }
+  .slider_items_content-second-slide {
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
+    margin-top: 74px;
+    position: absolute;
+    right: -800px;
+    z-index: 6;
+  }
+  .slider_items_content-second-slide_information {
+    width: 390px;
+    height: 280px;
+  }
+  .slider_items_content-second-slide_information_title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .slider_items_content-second-slide_information_description {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .slider_items_content-second-slide_information_price {
+    font-size: 19px;
+  }
+  .slider_items_content-second-slide_information_price span {
+    font-size: 30px;
+  }
+  .slider_items_content-second-slide_information_button {
     width: 226px;
     height: 53px;
     font-size: 21px;
@@ -775,7 +833,7 @@
     width: 12.125em;
     font-size: 25px;
     line-height: 30px;
-    padding-top: 224px;
+    padding-top: 107px;
   }
   .content__card-doctor__arrow {
     width: 14.375em;

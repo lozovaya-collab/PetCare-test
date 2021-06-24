@@ -1,10 +1,10 @@
 // Слайдер
-const prevSlide = document.querySelector('.slider_item_switches__left-arrow')
-const nextSlide = document.querySelector('.slider_item_switches__right-arrow')
-const slides = document.querySelector('.slider_item').querySelector('.wrapper').children
+const prevSlide = document.querySelector('.slider_items_switches__left-arrow')
+const nextSlide = document.querySelector('.slider_items_switches__right-arrow')
+const slides = document.querySelector('.slider_items').querySelector('.wrapper').children
 
-const bg = document.querySelector('.slider_item_circle')
-const bgDog = document.querySelector('.slider_item_circle-dog')
+const bg = document.querySelector('.slider_items_circle')
+const bgDog = document.querySelector('.slider_items_circle-dog')
 
 const nextContent = () => {
     const windowWidth = window.innerWidth
@@ -76,7 +76,7 @@ doctorForm.addEventListener('mouseleave', closeForm)
 // Попап
 
 const popup = document.querySelector('.popup')
-const buttonMore = document.querySelector('.second_slide_information_button')
+const buttonMore = document.querySelector('.slider_items_content-second-slide_information_button')
 const closePopup = document.querySelector('.popup_form_cross-icon')
 const buttonPopup = document.querySelector('.popup_form_button')
 

@@ -1,0 +1,39 @@
+@media screen and (max-width: 767px) and (min-width: 320px) {
+    .header {
+        height: 4.4375em;
+        &_content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 2em;
+            height: 2.4375em;
+            &__burger {
+                display: block;
+                fill: $button-color_violet;
+                width: 2em;
+                height: 1.375em;
+            }
+            &__logo {
+                width: 120.56px;
+                box-sizing: border-box;
+                &_icon {
+                    width: 38.4px;
+                    height: 38.56px;
+                    margin-top: 3px;
+                }
+                &_name {
+                    font-family: "Montserrat-SemiBold";
+                    font-size: 17px;
+                    line-height: 2.125em;
+                    box-sizing: border-box;
+                }
+            }
+            &__menu {
+                display: none;
+            }
+            &__social-nets {
+                display: none;
+            }
+        }
+    }
+}
