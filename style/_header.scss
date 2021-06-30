@@ -18,6 +18,7 @@
             align-items: center;
             justify-content: space-between;
             width: 12.5em;
+            text-decoration: none;
             &_icon {
                 width: 4em;
                 height: 4em;
@@ -27,6 +28,7 @@
                 }
             }
             &_name {
+                color: $main-color_black;
                 font-family: "Montserrat-SemiBold";
                 font-size: 1.75em;
                 line-height: 2.125em;
