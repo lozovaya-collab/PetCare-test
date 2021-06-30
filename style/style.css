@@ -90,8 +90,8 @@ a {
     height: 405px;
   }
   .burger-menu {
-    -webkit-transition: all 1s linear;
-    transition: all 1s linear;
+    -webkit-transition: right 1s linear;
+    transition: right 1s linear;
     z-index: 15;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -122,8 +122,8 @@ a {
     outline: none;
   }
   .burger-menu_cross-icon {
-    -webkit-transition: all 0.2s linear;
-    transition: all 0.2s linear;
+    -webkit-transition: fill 0.2s linear;
+    transition: fill 0.2s linear;
     fill: #BEE7E8;
     width: 24px;
     height: 24px;
@@ -299,8 +299,8 @@ input[type=number]::-webkit-outer-spin-button {
 .header_content__social-nets_instagram, .header_content__social-nets_vk, .header_content__social-nets_telegram {
   width: 2.5em;
   height: 2.5em;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: fill 0.2s linear;
+  transition: fill 0.2s linear;
   fill: #726DA8;
 }
 
@@ -355,8 +355,8 @@ input[type=number]::-webkit-outer-spin-button {
     height: 2.4375em;
   }
   .header_content__burger {
-    -webkit-transition: all 0.2s linear;
-    transition: all 0.2s linear;
+    -webkit-transition: fill 0.2s linear;
+    transition: fill 0.2s linear;
     cursor: pointer;
     display: block;
     fill: #726DA8;
@@ -396,8 +396,6 @@ input[type=number]::-webkit-outer-spin-button {
   max-width: 1440px;
   margin: 0 auto;
   overflow: hidden;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
 }
 
 .slider_switches-mobile {
@@ -459,8 +457,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .slider_items_switches__left-arrow, .slider_items_switches__right-arrow {
   cursor: pointer;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -488,8 +488,8 @@ input[type=number]::-webkit-outer-spin-button {
 .slider_items_switches__left-arrow_icon, .slider_items_switches__right-arrow_icon {
   width: 0.8125em;
   height: 1.4375em;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: fill 0.2s linear;
+  transition: fill 0.2s linear;
 }
 
 .slider_items_switches__left-arrow_icon:hover, .slider_items_switches__right-arrow_icon:hover {
@@ -645,8 +645,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .slider_items_content-second-slide_information_button {
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: background 0.2s linear;
+  transition: background 0.2s linear;
   cursor: pointer;
   width: 300px;
   height: 60px;
@@ -706,8 +706,8 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 21px;
   }
   .slider_items_content-second-slide {
-    -webkit-transition: all 1s linear;
-    transition: all 1s linear;
+    -webkit-transition: right 1s linear;
+    transition: right 1s linear;
     margin-top: 74px;
     position: absolute;
     right: -800px;
@@ -764,8 +764,8 @@ input[type=number]::-webkit-outer-spin-button {
     width: 2.5em;
   }
   .slider_switches-mobile_right, .slider_switches-mobile_left {
-    -webkit-transition: all 0.2s linear;
-    transition: all 0.2s linear;
+    -webkit-transition: background 0.2s linear;
+    transition: background 0.2s linear;
     cursor: pointer;
     width: 16px;
     height: 16px;
@@ -1521,8 +1521,8 @@ input[type=number]::-webkit-outer-spin-button {
   width: 24px;
   height: 24px;
   fill: #394573;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: fill 0.2s linear;
+  transition: fill 0.2s linear;
 }
 
 .popup_form_cross-icon:hover {
@@ -1697,8 +1697,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .popup_form_button {
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: background 0.2s linear;
+  transition: background 0.2s linear;
   cursor: pointer;
   width: 300px;
   height: 60px;

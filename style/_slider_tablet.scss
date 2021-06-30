@@ -43,10 +43,10 @@
                     }
                 }
                 &-second-slide {
-                    transition: all 1s linear;
+                    transition: right 1s linear;
                     margin-top: 74px;
                     position: absolute;
-                    right: -800px; //374
+                    right: -800px;
                     z-index: 6;
                     &_information {
                         width: 390px;

@@ -3,7 +3,6 @@
     max-width: 1440px;
     margin: 0 auto;
     overflow: hidden;
-    transition: all 0.3s linear;
     &_switches-mobile {
         display: none;
     }
@@ -48,7 +47,7 @@
             &__left-arrow,
             &__right-arrow {
                 cursor: pointer;
-                transition: all 0.2s linear;
+                transition: transform 0.2s linear;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -65,7 +64,7 @@
                 &_icon {
                     width: 0.8125em;
                     height: 1.4375em;
-                    transition: all 0.2s linear;
+                    transition: fill 0.2s linear;
                     &:hover {
                         fill: $button-color_aqua;
                     }
@@ -179,7 +178,7 @@
                         }
                     }
                     &_button {
-                        transition: all 0.2s linear;
+                        transition: background 0.2s linear;
                         cursor: pointer;
                         width: 300px;
                         height: 60px;

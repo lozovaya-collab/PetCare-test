@@ -85,7 +85,7 @@ a {
         height: 405px;
     }
     .burger-menu {
-        transition: all 1s linear;
+        transition: right 1s linear;
         z-index: 15;
         display: flex;
         justify-content: center;
@@ -108,7 +108,7 @@ a {
             border: none;
             outline: none;
             &-icon {
-                transition: all 0.2s linear;
+                transition: fill 0.2s linear;
                 fill: $main-color_light-aqua;
                 width: 24px;
                 height: 24px;
