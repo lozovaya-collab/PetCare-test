@@ -108,14 +108,23 @@ a {
     height: 100vh;
     background-color: #394573;
   }
-  .burger-menu_cross-icon {
+  .burger-menu_cross {
     cursor: pointer;
-    fill: #BEE7E8;
     position: absolute;
     width: 24px;
     height: 24px;
     left: 82.5%;
     top: 5.28%;
+    background: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+  }
+  .burger-menu_cross-icon {
+    fill: #BEE7E8;
+    width: 24px;
+    height: 24px;
   }
   .burger-menu_cross-icon:hover {
     fill: #FFFF;
