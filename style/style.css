@@ -576,8 +576,6 @@ input[type=number]::-webkit-outer-spin-button {
 .slider_items_content-first-slide__information_button:hover {
   background: -webkit-gradient(linear, right top, left top, from(#A0D2DB), to(#726DA8));
   background: linear-gradient(-90deg, #A0D2DB 0%, #726DA8 100%);
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
 }
 
 .slider_items_content-second-slide {

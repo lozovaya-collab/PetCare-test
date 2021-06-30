@@ -135,7 +135,6 @@
                         color: $main-color_white;
                         &:hover {
                             background: linear-gradient(-90deg, $button-color_aqua 0%, $button-color_violet 100%);
-                            transform: scale(1.05);
                         }
                     }
                 }
