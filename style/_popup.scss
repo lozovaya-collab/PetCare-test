@@ -10,16 +10,28 @@
     background-color: rgba(47, 47, 47, 0.25);
     &_form {
         position: relative;
-        &_cross-icon {
+        &_cross {
             cursor: pointer;
             position: absolute;
-            top: 5%;
-            left: 90.54%;
             width: 24px;
             height: 24px;
-            fill: $main-color_blue;
-            &:hover {
-                fill: $button-color_violet;
+            padding: 0;
+            display: flex;
+            top: 5%;
+            left: 90.54%;
+            background-color: $main-color_white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            outline: none;
+            &-icon {
+                width: 24px;
+                height: 24px;
+                fill: $main-color_blue;
+                &:hover {
+                    fill: $button-color_violet;
+                }
             }
         }
         box-sizing: border-box;

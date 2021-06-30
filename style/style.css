@@ -1436,11 +1436,30 @@ a {
   margin: 0;
 }
 
-.popup_form_cross-icon {
+.popup_form_cross {
   cursor: pointer;
   position: absolute;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   top: 5%;
   left: 90.54%;
+  background-color: #FFFF;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  outline: none;
+}
+
+.popup_form_cross-icon {
   width: 24px;
   height: 24px;
   fill: #394573;
