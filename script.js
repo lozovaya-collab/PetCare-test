@@ -17,11 +17,11 @@ const nextContent = () => {
     bgDog.style.opacity = "1"
 
     if (windowWidth >= 1216) {
-        slides[1].style.right = "1440px"
+        slides[1].style.right = "100%"
         slides[2].style.right = "608px"
     } else if (windowWidth >= 768) {
-        slides[1].style.right = "1216px"
-        slides[2].style.right = "374px"
+        slides[1].style.right = "100%"
+        slides[2].style.right = "376px"
     } else {
 
         nextSlideMobile.setAttribute('disabled', 'disabled')
@@ -31,7 +31,7 @@ const nextContent = () => {
         nextSlideMobile.classList.toggle('active_switch-mobile')
         prevSlideMobile.classList.toggle('active_switch-mobile')
 
-        slides[1].style.right = "284px"
+        slides[1].style.right = "100%"
         slides[2].style.right = "0"
     }
 
@@ -51,11 +51,11 @@ const prevContent = () => {
     bg.style.opacity = "1"
 
     if (windowWidth >= 1216) {
-        slides[1].style.right = "82px"
-        slides[2].style.right = "-720px"
+        slides[1].style.right = "482px"
+        slides[2].style.right = "-100%"
     } else if (windowWidth >= 768) {
-        slides[1].style.right = "-19px"
-        slides[2].style.right = "-720px"
+        slides[1].style.right = "272px"
+        slides[2].style.right = "-100%"
     } else {
         prevSlideMobile.setAttribute('disabled', 'disabled')
         nextSlideMobile.removeAttribute('disabled')
@@ -65,7 +65,7 @@ const prevContent = () => {
         prevSlideMobile.classList.toggle('active_switch-mobile')
 
         slides[1].style.right = "0"
-        slides[2].style.right = "-284px"
+        slides[2].style.right = "-100%"
     }
 
     nextSlide.removeAttribute('disabled')
@@ -91,7 +91,7 @@ slider.addEventListener('mousedown', (e) => {
     if (windowWidth < 768) {
 
         if (position > 140) {
-            slides[1].style.right = "284px"
+            slides[1].style.right = "100%"
             slides[2].style.right = "0"
 
             nextSlideMobile.setAttribute('disabled', 'disabled')
@@ -103,7 +103,7 @@ slider.addEventListener('mousedown', (e) => {
         } else {
             if (e.target.innerHTML != "Подобрать план") {
                 slides[1].style.right = "0"
-                slides[2].style.right = "-284px"
+                slides[2].style.right = "-100%"
                 prevSlideMobile.setAttribute('disabled', 'disabled')
                 nextSlideMobile.removeAttribute('disabled')
                 nextSlideMobile.classList.toggle('disabled_switch-mobile')

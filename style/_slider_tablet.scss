@@ -6,6 +6,8 @@
             &_circle {
                 left: -32.4375em;
                 top: -427px;
+                background: $main-color_blue url('../assets/images/cat.png') no-repeat 58.5% 90%;
+                background-size: 300px;
                 &-dog {
                     top: -427px;
                     left: -32.4375em;
@@ -14,14 +16,8 @@
             }
             &_content {
                 &-first-slide {
-                    right: -19px;
-                    &__image {
-                        &-cat {
-                            padding-top: 0.75em;
-                            width: 294.34px;
-                            height: 364px;
-                        }
-                    }
+                    right: 272px;
+                    top: 28px;
                     &__information {
                         height: 17.8125em;
                         width: 26em;

@@ -19,9 +19,9 @@
             position: absolute;
             width: 137.5em;
             height: 58.25em;
-            left: -21.4375em;
-            top: -20.75em;
-            background: $main-color_blue;
+            left: -371px;
+            top: -333px;
+            background: $main-color_blue url('../assets/images/cat.png') no-repeat 67.5% 90%;
             opacity: 1;
             border-radius: 50%;
             &-dog {
@@ -83,15 +83,7 @@
                 position: absolute;
                 display: flex;
                 align-items: center;
-                right: 82px;
-                &__image {
-                    box-sizing: border-box;
-                    &-cat {
-                        padding-top: 1.75em;
-                        width: 25em;
-                        height: 30.92em;
-                    }
-                }
+                top: 105px;
                 &__information {
                     transition: all 0.3s ease-in;
                     display: flex;
