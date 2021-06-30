@@ -122,6 +122,8 @@ a {
     outline: none;
   }
   .burger-menu_cross-icon {
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
     fill: #BEE7E8;
     width: 24px;
     height: 24px;
@@ -148,6 +150,8 @@ a {
     text-align: center;
   }
   .burger-menu_list_item a {
+    -webkit-transition: color 0.2s linear;
+    transition: color 0.2s linear;
     font-family: "Montserrat-Regular";
     font-size: 24px;
     line-height: 29px;
@@ -155,7 +159,6 @@ a {
   }
   .burger-menu_list_item a:hover {
     color: #FFFF;
-    text-decoration: underline;
   }
 }
 
@@ -231,6 +234,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .header_content__logo_icon {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
   width: 4em;
   height: 4em;
   fill: #726DA8;
@@ -264,6 +269,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .header_content__menu_item a {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
   font-family: "Montserrat-Medium";
   color: #333333;
   font-size: 1.4375em;
@@ -273,7 +280,6 @@ input[type=number]::-webkit-outer-spin-button {
 .header_content__menu_item a:hover {
   cursor: pointer;
   color: #726DA8;
-  text-decoration: underline;
 }
 
 .header_content__social-nets {
@@ -293,6 +299,8 @@ input[type=number]::-webkit-outer-spin-button {
 .header_content__social-nets_instagram, .header_content__social-nets_vk, .header_content__social-nets_telegram {
   width: 2.5em;
   height: 2.5em;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
   fill: #726DA8;
 }
 
@@ -347,6 +355,8 @@ input[type=number]::-webkit-outer-spin-button {
     height: 2.4375em;
   }
   .header_content__burger {
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
     cursor: pointer;
     display: block;
     fill: #726DA8;
@@ -449,8 +459,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 .slider_items_switches__left-arrow, .slider_items_switches__right-arrow {
   cursor: pointer;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -478,6 +488,8 @@ input[type=number]::-webkit-outer-spin-button {
 .slider_items_switches__left-arrow_icon, .slider_items_switches__right-arrow_icon {
   width: 0.8125em;
   height: 1.4375em;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .slider_items_switches__left-arrow_icon:hover, .slider_items_switches__right-arrow_icon:hover {
@@ -555,8 +567,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .slider_items_content-first-slide__information_button {
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
   cursor: pointer;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -633,6 +645,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .slider_items_content-second-slide_information_button {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
   cursor: pointer;
   width: 300px;
   height: 60px;
@@ -750,6 +764,8 @@ input[type=number]::-webkit-outer-spin-button {
     width: 2.5em;
   }
   .slider_switches-mobile_right, .slider_switches-mobile_left {
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
     cursor: pointer;
     width: 16px;
     height: 16px;
@@ -985,6 +1001,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .content__card-info_button {
+  -webkit-transition: background 0.2s linear;
+  transition: background 0.2s linear;
   cursor: pointer;
   width: 344px;
   height: 60px;
@@ -1105,6 +1123,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .content__card-blog_footer a {
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
   color: #FFFF;
   text-decoration: none;
 }
@@ -1351,6 +1371,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .footer_content__contacts_link {
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
   text-decoration: none;
   color: #726DA8;
   font-family: "Montserrat-Medium";
@@ -1499,6 +1521,8 @@ input[type=number]::-webkit-outer-spin-button {
   width: 24px;
   height: 24px;
   fill: #394573;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .popup_form_cross-icon:hover {
@@ -1673,6 +1697,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .popup_form_button {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
   cursor: pointer;
   width: 300px;
   height: 60px;

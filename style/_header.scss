@@ -20,6 +20,7 @@
             width: 12.5em;
             text-decoration: none;
             &_icon {
+                transition: all 0.2s linear;
                 width: 4em;
                 height: 4em;
                 fill: $button-color_violet;
@@ -43,6 +44,7 @@
             padding: 0;
             margin-left: -0.5em;
             &_item a {
+                transition: all 0.2s linear;
                 font-family: "Montserrat-Medium";
                 color: $main-color_black;
                 font-size: 1.4375em;
@@ -50,7 +52,6 @@
                 &:hover {
                     cursor: pointer;
                     color: $button-color_violet;
-                    text-decoration: underline;
                 }
             }
         }
@@ -65,6 +66,7 @@
             &_telegram {
                 width: 2.5em;
                 height: 2.5em;
+                transition: all 0.2s linear;
                 fill: $button-color_violet;
                 &:hover {
                     fill: $button-color_aqua;

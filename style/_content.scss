@@ -66,6 +66,7 @@
                 }
             }
             &_button {
+                transition: background 0.2s linear;
                 cursor: pointer;
                 width: 344px;
                 height: 60px;
@@ -151,6 +152,7 @@
                 font-size: 24px;
                 line-height: 29px;
                 & a {
+                    transition: color 0.2s linear;
                     color: $main-color_white;
                     text-decoration: none;
                     &:hover {

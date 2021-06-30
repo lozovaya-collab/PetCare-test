@@ -48,7 +48,7 @@
             &__left-arrow,
             &__right-arrow {
                 cursor: pointer;
-                transition: all 0.2s ease-in;
+                transition: all 0.2s linear;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -65,6 +65,7 @@
                 &_icon {
                     width: 0.8125em;
                     height: 1.4375em;
+                    transition: all 0.2s linear;
                     &:hover {
                         fill: $button-color_aqua;
                     }
@@ -120,7 +121,7 @@
                         }
                     }
                     &_button {
-                        transition: all 0.2s ease-in;
+                        transition: all 0.2s linear;
                         cursor: pointer;
                         box-sizing: border-box;
                         width: 300px;
@@ -178,6 +179,7 @@
                         }
                     }
                     &_button {
+                        transition: all 0.2s linear;
                         cursor: pointer;
                         width: 300px;
                         height: 60px;

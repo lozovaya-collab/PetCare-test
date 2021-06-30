@@ -108,6 +108,7 @@ a {
             border: none;
             outline: none;
             &-icon {
+                transition: all 0.2s linear;
                 fill: $main-color_light-aqua;
                 width: 24px;
                 height: 24px;
@@ -127,13 +128,13 @@ a {
             justify-content: space-between;
             text-align: center;
             &_item a {
+                transition: color 0.2s linear;
                 font-family: "Montserrat-Regular";
                 font-size: 24px;
                 line-height: 29px;
                 color: $main-color_light-aqua;
                 &:hover {
                     color: $main-color_white;
-                    text-decoration: underline;
                 }
             }
         }

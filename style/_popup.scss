@@ -29,6 +29,7 @@
                 width: 24px;
                 height: 24px;
                 fill: $main-color_blue;
+                transition: all 0.2s linear;
                 &:hover {
                     fill: $button-color_violet;
                 }
@@ -156,6 +157,7 @@
             }
         }
         &_button {
+            transition: all 0.2s linear;
             cursor: pointer;
             width: 300px;
             height: 60px;

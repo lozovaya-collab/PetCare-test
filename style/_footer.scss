@@ -14,6 +14,7 @@
             justify-content: space-between;
             margin-right: -1.4375em;
             &_link {
+                transition: color 0.2s linear;
                 text-decoration: none;
                 color: $button-color_violet;
                 font-family: "Montserrat-Medium";
