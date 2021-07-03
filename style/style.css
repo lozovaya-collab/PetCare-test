@@ -770,6 +770,8 @@ input[type=number]::-webkit-outer-spin-button {
     width: 2.5em;
   }
   .slider_switches-mobile_right, .slider_switches-mobile_left {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     -webkit-transition: background 0.2s linear;
     transition: background 0.2s linear;
     cursor: pointer;

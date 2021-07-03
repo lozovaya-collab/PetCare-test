@@ -12,6 +12,7 @@
             width: 2.5em;
             &_right,
             &_left {
+                box-sizing: border-box;
                 transition: background 0.2s linear;
                 cursor: pointer;
                 width: 16px;
