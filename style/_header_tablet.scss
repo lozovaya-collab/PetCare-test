@@ -1,32 +1,33 @@
-@media screen and (max-width: 1216px) and (min-width: 768px) {
+@media screen and (max-width: 1270px) and (min-width: 768px) {
     .header {
         &_content {
             &__logo {
-                width: 10em;
+                width: 8.5em;
                 &_icon {
-                    width: 3em;
-                    height: 3em;
+                    width: 2.5em;
+                    height: 2.5em;
                 }
                 &_name {
                     font-family: "Montserrat-SemiBold";
-                    font-size: 25px;
+                    font-size: 22px;
                     line-height: 2.125em;
                 }
             }
             &__menu {
-                width: 24.75em;
+                width: 22.75em;
                 margin-left: 0;
                 &_item a {
-                    font-size: 1.125em;
+                    font-size: 1.1em;
                 }
             }
             &__social-nets {
-                width: 9em;
+                width: 6em;
+                padding-left: 15px;
                 &_instagram,
                 &_vk,
                 &_telegram {
-                    width: 2em;
-                    height: 2em;
+                    width: 1.5em;
+                    height: 1.5em;
                 }
             }
         }

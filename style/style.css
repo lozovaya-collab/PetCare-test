@@ -19,7 +19,7 @@ html {
 
 .wrapper {
   position: relative;
-  width: 76em;
+  width: 84.4%;
   margin: 0 auto;
 }
 
@@ -75,19 +75,26 @@ a {
           transform: scale(1.01);
 }
 
-@media screen and (max-width: 1216px) and (min-width: 768px) {
+@media screen and (max-width: 1440px) and (min-width: 1269px) {
+  .card {
+    width: 33em;
+    height: 38.375em;
+  }
+}
+
+@media screen and (max-width: 1270px) and (min-width: 768px) {
   .wrapper {
-    width: 48em;
+    width: 84.4%;
   }
   .card {
-    width: 360px;
-    height: 438px;
+    width: 280px;
+    height: 405px;
   }
 }
 
 @media screen and (max-width: 767px) and (min-width: 320px) {
   .wrapper {
-    width: 17.5em;
+    width: 87.5%;
   }
   .card {
     width: 280px;
@@ -312,32 +319,33 @@ input[type=number]::-webkit-outer-spin-button {
   fill: #A0D2DB;
 }
 
-@media screen and (max-width: 1216px) and (min-width: 768px) {
+@media screen and (max-width: 1270px) and (min-width: 768px) {
   .header_content__logo {
-    width: 10em;
+    width: 8.5em;
   }
   .header_content__logo_icon {
-    width: 3em;
-    height: 3em;
+    width: 2.5em;
+    height: 2.5em;
   }
   .header_content__logo_name {
     font-family: "Montserrat-SemiBold";
-    font-size: 25px;
+    font-size: 22px;
     line-height: 2.125em;
   }
   .header_content__menu {
-    width: 24.75em;
+    width: 22.75em;
     margin-left: 0;
   }
   .header_content__menu_item a {
-    font-size: 1.125em;
+    font-size: 1.1em;
   }
   .header_content__social-nets {
-    width: 9em;
+    width: 6em;
+    padding-left: 15px;
   }
   .header_content__social-nets_instagram, .header_content__social-nets_vk, .header_content__social-nets_telegram {
-    width: 2em;
-    height: 2em;
+    width: 1.5em;
+    height: 1.5em;
   }
 }
 
@@ -397,7 +405,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .slider {
   height: 37.5em;
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -410,10 +418,8 @@ input[type=number]::-webkit-outer-spin-button {
   padding-top: 2em;
   position: relative;
   overflow: visible;
-}
-
-.slider_items .wrapper {
-  position: relative;
+  width: 84.4%;
+  margin: 0 auto;
 }
 
 .slider_items_circle {
@@ -423,7 +429,7 @@ input[type=number]::-webkit-outer-spin-button {
   position: absolute;
   width: 137.5em;
   height: 58.25em;
-  left: -371px;
+  left: -25.4375em;
   top: -333px;
   background: #394573 url("../assets/images/cat.png") no-repeat 67.5% 90%;
   opacity: 1;
@@ -437,11 +443,12 @@ input[type=number]::-webkit-outer-spin-button {
   position: absolute;
   width: 137.5em;
   height: 58.25em;
-  left: -21.4375em;
+  left: -25.4375em;
   top: -20.75em;
   background: url("../assets/images/dog_slider.jpg") no-repeat 122% 32%;
   opacity: 0;
   border-radius: 50%;
+  background-size: 93%;
 }
 
 .slider_items_switches {
@@ -516,7 +523,9 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 105px;
+  top: 137px;
+  right: 0;
+  width: 100%;
 }
 
 .slider_items_content-first-slide__information {
@@ -588,7 +597,8 @@ input[type=number]::-webkit-outer-spin-button {
   transition: all 1s linear;
   margin-top: 103px;
   position: absolute;
-  right: -720px;
+  right: -120%;
+  width: 100%;
   z-index: 6;
 }
 
@@ -633,6 +643,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .slider_items_content-second-slide_information_price span {
+  font-family: "Montserrat-SemiBold";
   font-size: 42px;
   line-height: 51px;
 }
@@ -657,25 +668,26 @@ input[type=number]::-webkit-outer-spin-button {
   background: #726DA8;
 }
 
-@media screen and (max-width: 1216px) and (min-width: 768px) {
+@media screen and (max-width: 1270px) and (min-width: 768px) {
   .slider {
-    max-width: 1216px;
+    max-width: 1270px;
     height: 31.5em;
   }
   .slider_items_circle {
     left: -32.4375em;
     top: -427px;
-    background: #394573 url("../assets/images/cat.png") no-repeat 58.5% 90%;
+    background: #394573 url("../assets/images/cat.png") no-repeat 49.5% 90%;
     background-size: 300px;
   }
   .slider_items_circle-dog {
     top: -427px;
     left: -32.4375em;
-    background: url("../assets/images/dog_slider.jpg") no-repeat 142% 32%;
+    background: url("../assets/images/dog_slider.jpg") no-repeat 69% -68%;
+    background-size: 72%;
   }
   .slider_items_content-first-slide {
-    right: 272px;
-    top: 28px;
+    right: 0;
+    top: 47px;
   }
   .slider_items_content-first-slide__information {
     height: 17.8125em;
@@ -701,7 +713,7 @@ input[type=number]::-webkit-outer-spin-button {
     transition: right 1s linear;
     margin-top: 74px;
     position: absolute;
-    right: -800px;
+    right: -120%;
     z-index: 6;
   }
   .slider_items_content-second-slide_information {
@@ -769,13 +781,11 @@ input[type=number]::-webkit-outer-spin-button {
   }
   .slider_items {
     padding-top: 2em;
+    width: 87.5%;
     width: 280px;
     height: 25em;
     position: relative;
     overflow: hidden;
-  }
-  .slider_items .wrapper {
-    position: relative;
   }
   .slider_items_circle {
     display: none;
@@ -800,6 +810,7 @@ input[type=number]::-webkit-outer-spin-button {
     background-size: 150px;
     border-radius: 24px;
     padding-top: 2em;
+    margin-top: 2em;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
@@ -839,7 +850,7 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    right: -284px;
+    right: -100%;
     position: absolute;
     background: url("../assets/images/dog-mobile_slider.jpg") no-repeat 0% 32%;
     border-radius: 24px;
@@ -1114,101 +1125,106 @@ input[type=number]::-webkit-outer-spin-button {
   color: #BEE7E8;
 }
 
-@media screen and (max-width: 1216px) and (min-width: 768px) {
+@media screen and (max-width: 1270px) and (min-width: 768px) {
   .content {
     height: 27.375em;
   }
+  .content .wrapper {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
   .content__card-doctor {
-    background: url("../assets/images/dog_consultation.jpg") no-repeat bottom left;
+    background: url("../assets/images/dog_consultation.jpg") no-repeat top left;
     background-size: 445px 473px;
   }
   .content__card-doctor__question {
     width: 12.125em;
-    font-size: 25px;
+    font-size: 19px;
     line-height: 30px;
-    padding-top: 107px;
+    padding-top: 201px;
   }
   .content__card-doctor__arrow {
-    width: 14.375em;
+    width: 12.375em;
     height: 1.0625em;
   }
   .content__card-info {
-    width: 100%;
-    height: 100%;
-    right: -100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    background-color: #FFFF;
-    padding: 49px 30px;
+    right: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 32px 0 40px 0;
   }
   .content__card-info_title {
-    font-family: "Montserrat-SemiBold";
     font-size: 20px;
-    line-height: 25px;
-    width: 383px;
-    color: #394573;
-    margin: 0 0 -5px 0;
+    line-height: 24px;
+    text-align: center;
+    width: 240px;
+    margin: 0 0 -23px 0;
   }
   .content__card-info_price {
-    font-family: "Montserrat-SemiBold";
-    font-size: 20px;
-    line-height: 39px;
-    color: #A0D2DB;
-    margin-bottom: -6px;
+    width: 240px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: -17px;
   }
   .content__card-info_price span {
-    font-size: 30px;
-    line-height: 49px;
+    font-size: 26px;
+    line-height: 32px;
   }
   .content__card-info_button {
-    width: 261px;
-    height: 50px;
-    font-size: 18px;
-    margin-top: -10px;
+    width: 220px;
+    height: 48px;
+    font-size: 14px;
+    line-height: 17px;
   }
   .content__card-info_list {
-    height: 242px;
-    width: 300px;
+    height: 149px;
+    width: 240px;
   }
   .content__card-info_list__item {
-    height: 61px;
-    margin-bottom: 10px;
+    height: 51px;
+    margin-bottom: 16px;
   }
   .content__card-info_list__item-icon {
-    height: 46px;
-    width: 46px;
-    margin-right: 10px;
+    height: 2em;
+    width: 2em;
+    margin-right: 8px;
   }
   .content__card-info_list__item-text {
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .content__card-info_list__item-text br {
+    display: block;
   }
   .content__card-blog {
-    background: url("../assets/images/sleepy_cat.jpg") no-repeat bottom left;
-    background-size: 445px 473px;
+    background: url("../assets/images/sleppy_cat-mobile.jpg") no-repeat center center;
+    border-radius: 24px;
   }
   .content__card-blog_information {
-    height: 14.625em;
+    padding: 0px 20px;
+    border-radius: 0 0 24px 24px;
+    height: 163px;
+    background: none;
   }
   .content__card-blog_information__headline {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 10px 0;
   }
   .content__card-blog_information__details {
-    font-size: 19px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0;
   }
   .content__card-blog_footer {
-    padding-left: 40 px;
-    font-size: 20px;
+    width: 100%;
+    height: 2.5em;
+    border-radius: 0 0 24px 24px;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -1376,7 +1392,7 @@ input[type=number]::-webkit-outer-spin-button {
   display: none;
 }
 
-@media screen and (max-width: 1216px) and (min-width: 768px) {
+@media screen and (max-width: 1270px) and (min-width: 768px) {
   .footer_content__contacts {
     height: 3.125em;
     margin-right: 0;

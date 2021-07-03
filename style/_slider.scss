@@ -1,6 +1,6 @@
 .slider {
     height: 37.5em;
-    max-width: 1440px;
+    max-width: 100%;
     margin: 0 auto;
     overflow: hidden;
     &_switches-mobile {
@@ -10,16 +10,15 @@
         padding-top: 2em;
         position: relative;
         overflow: visible;
-        & .wrapper {
-            position: relative;
-        }
+        width: 84.4%;
+        margin: 0 auto;
         &_circle {
             transition: opacity 1s linear;
             z-index: 1;
             position: absolute;
             width: 137.5em;
             height: 58.25em;
-            left: -371px;
+            left: -25.4375em;
             top: -333px;
             background: $main-color_blue url('../assets/images/cat.png') no-repeat 67.5% 90%;
             opacity: 1;
@@ -30,11 +29,12 @@
                 position: absolute;
                 width: 137.5em;
                 height: 58.25em;
-                left: -21.4375em;
+                left: -25.4375em;
                 top: -20.75em;
                 background: url('../assets/images/dog_slider.jpg') no-repeat 122% 32%;
                 opacity: 0;
                 border-radius: 50%;
+                background-size: 93%;
             }
         }
         &_switches {
@@ -83,7 +83,9 @@
                 position: absolute;
                 display: flex;
                 align-items: center;
-                top: 105px;
+                top: 137px;
+                right: 0;
+                width: 100%;
                 &__information {
                     transition: all 0.3s ease-in;
                     display: flex;
@@ -135,7 +137,8 @@
                 transition: all 1s linear;
                 margin-top: 103px;
                 position: absolute;
-                right: -720px;
+                right: -120%;
+                width: 100%;
                 z-index: 6;
                 &_information {
                     width: 606px;
@@ -165,6 +168,7 @@
                         color: $main-color_blue;
                         margin: 0;
                         & span {
+                            font-family: "Montserrat-SemiBold";
                             font-size: 42px;
                             line-height: 51px;
                         }

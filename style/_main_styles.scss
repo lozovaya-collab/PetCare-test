@@ -28,7 +28,7 @@ $shadow: rgba(0, 0, 0, 0.3);
 
 .wrapper {
     position: relative;
-    width: 76em;
+    width: 84.4%;
     margin: 0 auto;
 }
 
@@ -70,19 +70,26 @@ a {
     }
 }
 
-@media screen and (max-width: 1216px) and (min-width: 768px) {
+@media screen and (max-width: 1440px) and (min-width: 1269px) {
+    .card {
+        width: 33em;
+        height: 38.375em;
+    }
+}
+
+@media screen and (max-width: 1270px) and (min-width: 768px) {
     .wrapper {
-        width: 48em;
+        width: 84.4%;
     }
     .card {
-        width: 360px;
-        height: 438px;
+        width: 280px;
+        height: 405px;
     }
 }
 
 @media screen and (max-width: 767px) and (min-width: 320px) {
     .wrapper {
-        width: 17.5em;
+        width: 87.5%;
     }
     .card {
         width: 280px;
