@@ -13,28 +13,6 @@
         &__burger {
             display: none;
         }
-        &__logo {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 12.5em;
-            text-decoration: none;
-            &_icon {
-                transition: all 0.2s linear;
-                width: 4em;
-                height: 4em;
-                fill: $button-color_violet;
-                &:hover {
-                    fill: $button-color_aqua;
-                }
-            }
-            &_name {
-                color: $main-color_black;
-                font-family: "Montserrat-SemiBold";
-                font-size: 1.75em;
-                line-height: 2.125em;
-            }
-        }
         &__menu {
             display: flex;
             justify-content: space-between;

@@ -46,6 +46,29 @@ a {
     }
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 12.5em;
+    text-decoration: none;
+    &_icon {
+        transition: all 0.2s linear;
+        width: 4em;
+        height: 4em;
+        fill: $button-color_violet;
+        &:hover {
+            fill: $button-color_aqua;
+        }
+    }
+    &_name {
+        color: $main-color_black;
+        font-family: "Montserrat-SemiBold";
+        font-size: 1.75em;
+        line-height: 2.125em;
+    }
+}
+
 .active_switch {
     fill: $button-color_violet;
     &-mobile {
@@ -78,6 +101,18 @@ a {
         width: 33em;
         height: 38.375em;
     }
+    .logo {
+        width: 8.5em;
+        &_icon {
+            width: 2.5em;
+            height: 2.5em;
+        }
+        &_name {
+            font-family: "Montserrat-SemiBold";
+            font-size: 22px;
+            line-height: 2.125em;
+        }
+    }
 }
 
 @media screen and (max-width: 1270px) and (min-width: 768px) {
@@ -97,6 +132,21 @@ a {
     .card {
         width: 280px;
         height: 405px;
+    }
+    .logo {
+        width: 120.56px;
+        box-sizing: border-box;
+        &_icon {
+            width: 38.4px;
+            height: 38.56px;
+            margin-top: 3px;
+        }
+        &_name {
+            font-family: "Montserrat-SemiBold";
+            font-size: 17px;
+            line-height: 2.125em;
+            box-sizing: border-box;
+        }
     }
     .burger-menu {
         transition: right 1s linear;

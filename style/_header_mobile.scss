@@ -18,21 +18,6 @@
                     fill: $button-color_aqua;
                 }
             }
-            &__logo {
-                width: 120.56px;
-                box-sizing: border-box;
-                &_icon {
-                    width: 38.4px;
-                    height: 38.56px;
-                    margin-top: 3px;
-                }
-                &_name {
-                    font-family: "Montserrat-SemiBold";
-                    font-size: 17px;
-                    line-height: 2.125em;
-                    box-sizing: border-box;
-                }
-            }
             &__menu {
                 display: none;
             }

@@ -1,18 +1,6 @@
 @media screen and (max-width: 1270px) and (min-width: 768px) {
     .header {
         &_content {
-            &__logo {
-                width: 8.5em;
-                &_icon {
-                    width: 2.5em;
-                    height: 2.5em;
-                }
-                &_name {
-                    font-family: "Montserrat-SemiBold";
-                    font-size: 22px;
-                    line-height: 2.125em;
-                }
-            }
             &__menu {
                 width: 22.75em;
                 margin-left: 0;
