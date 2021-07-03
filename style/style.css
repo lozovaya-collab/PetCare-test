@@ -1,5 +1,8 @@
 html {
   scroll-behavior: smooth;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 @font-face {
