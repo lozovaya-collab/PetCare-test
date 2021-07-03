@@ -12,29 +12,29 @@
         overflow: visible;
         width: 84.4%;
         margin: 0 auto;
-        &_circle {
-            transition: opacity 1s linear;
-            z-index: 1;
-            position: absolute;
+        &::before {
+            background: $main-color_blue url('../assets/images/cat.png') no-repeat 67.5% 90%;
+            content: '';
+            border-radius: 50%;
             width: 137.5em;
             height: 58.25em;
             left: -25.4375em;
             top: -333px;
-            background: $main-color_blue url('../assets/images/cat.png') no-repeat 67.5% 90%;
-            opacity: 1;
             border-radius: 50%;
-            &-dog {
-                transition: opacity 1s linear;
-                z-index: 1;
-                position: absolute;
+            position: absolute;
+        }
+        &_circle {
+            &::before {
+                content: '';
+                background: url('../assets/images/dog_slider.jpg') no-repeat 122% 32%;
+                background-size: 93%;
+                border-radius: 50%;
                 width: 137.5em;
                 height: 58.25em;
                 left: -25.4375em;
-                top: -20.75em;
-                background: url('../assets/images/dog_slider.jpg') no-repeat 122% 32%;
-                opacity: 0;
+                top: -333px;
                 border-radius: 50%;
-                background-size: 93%;
+                position: absolute;
             }
         }
         &_switches {

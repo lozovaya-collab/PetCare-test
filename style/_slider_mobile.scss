@@ -32,11 +32,12 @@
             height: 25em;
             position: relative;
             overflow: hidden;
+            &::before {
+                content: "";
+                background-color: $main-color_white;
+            }
             &_circle {
                 display: none;
-                &-dog {
-                    display: none;
-                }
             }
             &_switches {
                 display: none;

@@ -3,16 +3,23 @@
         max-width: 1270px;
         height: 31.5em;
         &_items {
-            &_circle {
-                left: -32.4375em;
+            &::before {
+                left: -42.4375em;
                 top: -427px;
-                background: $main-color_blue url('../assets/images/cat.png') no-repeat 49.5% 90%;
+                background: $main-color_blue url(../assets/images/cat.png) no-repeat 60.5% 90%;
                 background-size: 300px;
-                &-dog {
+                width: 137.5em;
+                height: 58.25em;
+            }
+            &_circle {
+                &::before {
+                    background: url(../assets/images/dog_slider.jpg) no-repeat 122% 5%;
+                    background-size: 88%;
+                    left: -42.4375em;
                     top: -427px;
-                    left: -32.4375em;
-                    background: url('../assets/images/dog_slider.jpg') no-repeat 69% -68%;
-                    background-size: 72%;
+                    z-index: 1;
+                    width: 137.5em;
+                    height: 58.25em;
                 }
             }
             &_content {

@@ -12,16 +12,18 @@ const bgDog = document.querySelector('.slider_items_circle-dog')
 
 const nextContent = () => {
     const windowWidth = window.innerWidth
-    console.log(slides);
-    bg.style.opacity = "0"
-    bgDog.style.opacity = "1"
+
 
     if (windowWidth >= 1216) {
-        slides[3].style.right = "100%"
-        slides[4].style.right = "0"
+        slider.classList.toggle('slider_items_circle')
+
+        slides[1].style.right = "120%"
+        slides[2].style.right = "0"
     } else if (windowWidth >= 768) {
-        slides[3].style.right = "100%"
-        slides[4].style.right = "0"
+        slider.classList.toggle('slider_items_circle')
+
+        slides[1].style.right = "120%"
+        slides[2].style.right = "0"
     } else {
 
         nextSlideMobile.setAttribute('disabled', 'disabled')
@@ -31,8 +33,8 @@ const nextContent = () => {
         nextSlideMobile.classList.toggle('active_switch-mobile')
         prevSlideMobile.classList.toggle('active_switch-mobile')
 
-        slides[3].style.right = "100%"
-        slides[4].style.right = "0"
+        slides[1].style.right = "100%"
+        slides[2].style.right = "0"
     }
 
     prevSlide.removeAttribute('disabled')
@@ -46,16 +48,15 @@ const nextContent = () => {
 
 const prevContent = () => {
     const windowWidth = window.innerWidth
-    console.log('asjhgx');
-    bgDog.style.opacity = "0"
-    bg.style.opacity = "1"
 
     if (windowWidth >= 1216) {
-        slides[3].style.right = "0"
-        slides[4].style.right = "-120%"
+        slider.classList.toggle('slider_items_circle')
+        slides[1].style.right = "0"
+        slides[2].style.right = "-120%"
     } else if (windowWidth >= 768) {
-        slides[3].style.right = "0"
-        slides[4].style.right = "-120%"
+        slider.classList.toggle('slider_items_circle')
+        slides[1].style.right = "0"
+        slides[2].style.right = "-120%"
     } else {
         prevSlideMobile.setAttribute('disabled', 'disabled')
         nextSlideMobile.removeAttribute('disabled')
@@ -63,9 +64,9 @@ const prevContent = () => {
         prevSlideMobile.classList.toggle('disabled_switch-mobile')
         nextSlideMobile.classList.toggle('active_switch-mobile')
         prevSlideMobile.classList.toggle('active_switch-mobile')
-        console.log('sdfds');
-        slides[3].style.right = "0"
-        slides[4].style.right = "-100%"
+
+        slides[1].style.right = "0"
+        slides[2].style.right = "-100%"
     }
 
     nextSlide.removeAttribute('disabled')
@@ -91,8 +92,8 @@ slider.addEventListener('mousedown', (e) => {
     if (windowWidth < 768) {
 
         if (position > 140) {
-            slides[3].style.right = "100%"
-            slides[4].style.right = "0"
+            slides[1].style.right = "100%"
+            slides[2].style.right = "0"
 
             nextSlideMobile.setAttribute('disabled', 'disabled')
             prevSlideMobile.removeAttribute('disabled')
@@ -102,8 +103,8 @@ slider.addEventListener('mousedown', (e) => {
             prevSlideMobile.classList.toggle('active_switch-mobile')
         } else {
             if (e.target.innerHTML != "Подобрать план") {
-                slides[3].style.right = "0"
-                slides[4].style.right = "-100%"
+                slides[1].style.right = "0"
+                slides[2].style.right = "-100%"
                 prevSlideMobile.setAttribute('disabled', 'disabled')
                 nextSlideMobile.removeAttribute('disabled')
                 nextSlideMobile.classList.toggle('disabled_switch-mobile')
